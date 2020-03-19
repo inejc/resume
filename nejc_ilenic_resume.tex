@@ -1,0 +1,185 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/nejc-ilenic}{\Large Nejc Ilenič}} \\
+  LinkedIn: \href{https://www.linkedin.com/in/nejc-ilenic}{https://www.linkedin.com/in/nejc-ilenic} \\ GitHub: \href{https://github.com/inejc}{https://github.com/inejc} & Email : \href{mailto:nejc.ilenic@gmail.com}{nejc.ilenic@gmail.com} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Ljubljana, Faculty of Computer and Information Science}{Ljubljana, Slovenia}
+      {Master's degree, Computer Science}{2015 -- 2017}
+    \resumeSubheading
+      {University of Ljubljana, Faculty of Computer and Information Science}{Ljubljana, Slovenia}
+      {Bachelor's degree, Computer Science}{2011 -- 2015}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {GlobalWebIndex}{London, United Kingdom}
+      {Machine Learning Engineer}{Feb 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{Pollpass}
+          {I'm working in a remote team that is building Pollpass, a distributed, real-time surveying platform. My main responsibilities include leading the design and implementation of outbound data pipelines and the construction of intelligent algorithms for ensuring data quality.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Bioinformatics Laboratory, University of Ljubljana}{Ljubljana, Slovenia}
+      {Software Developer}{Aug 2016 - Sep 2017}
+      \resumeItemListStart
+        \resumeItem{Orange}
+          {My main responsibility was to design and implement a system for simplifying the embedding process of digital images. We deployed various pre-trained convolutional neural networks to a remotely accessible service and exposed the functionality in Orange (an open-source machine learning and data visualization software available at \href{https://orange.biolab.si}{https://orange.biolab.si)}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {4th Office}{Ljubljana, Slovenia}
+      {Software Developer}{Aug 2015}
+      \resumeItemListStart
+        \resumeItem{Internship}
+          {I attended a one-month internship where I worked on a C\# backend project. The collaboration was a result of successful participation in a student competition.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IT klinika d.o.o}{Ljubljana, Slovenia}
+      {Software Developer}{Jul 2014 - Aug 2015}
+      \resumeItemListStart
+        \resumeItem{Harmonia}
+          {I worked in a small team of students developing a Django project for online booking of beauty and wellness services. The collaboration was a result of successful participation in a student competition.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+
+  \resumeSubHeadingListStart
+    \resumeSubItem{Slovenian Tarok card game environment}
+      {A C++ implementation of the Slovenian Tarok card game environment for the OpenSpiel framework.}
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeSubItem{doddle-model: machine learning in Scala}
+      {An in-memory machine learning library implemented in Scala.}
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeSubItem{A PyTorch implementation of Paragraph Vectors}
+      {A PyTorch implementation of the Distributed Representations of Sentences and Documents paper by Q. V. Le et al.}
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeSubItem{Orange3 Image Analytics Add-on}
+      {Orange3 Image Analytics is an add-on for the Orange3 data mining suite (an open-source software). It provides extensions for importing/creating labeled image data sets and embedding them through a variety of pre-trained deep neural networks.}
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeSubItem{Educational Neural Networks Library}
+      {A pure Python and NumPy implementation of a neural networks library developed for educational purposes.}
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeSubItem{16th place solution for the Intel \& MobileODT Cervical Cancer Screening competition on Kaggle}
+      {The challenge of the competition was to develop an algorithm that accurately identifies a woman’s cervix type based on digital images. Our team ended up 16th out of 848 teams on the private, final leaderboard (top 2 \%).}
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeSubItem{Winning Solution for the Painter by Numbers Competition on Kaggle}
+      {The challenge of the competition was to examine pairs of paintings and determine whether they were painted by the same artist.}
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeSubItem{Domain Independent Monte Carlo Tree Search Methods Implementation}
+      {A Java implementation of Monte Carlo Tree Search methods that is self-contained and domain-independent. The project was developed for my Bachelor’s thesis.}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
